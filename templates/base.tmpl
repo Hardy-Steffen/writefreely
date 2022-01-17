@@ -1,8 +1,28 @@
-{{define "base"}}<!DOCTYPE HTML>
+{{define "base"}}
+<!--  
+
+     █████╗      ██╗██╗  ██╗███████╗   ██╗ ██████╗ 
+    ██╔══██╗     ██║██║  ██║██╔════╝   ██║██╔═══██╗
+    ███████║     ██║███████║███████╗   ██║██║   ██║
+    ██╔══██║██   ██║██╔══██║╚════██║   ██║██║   ██║
+    ██║  ██║╚█████╔╝██║  ██║███████║██╗██║╚██████╔╝
+    ╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝╚══════╝╚═╝╚═╝ ╚═════╝ 
+                                                   
+   made by Alexander Jonathan Hardy Steffen, MA JD, 2022
+   https://hardysteffen.com
+   https://ajhs.io
+   -->
+<!DOCTYPE HTML>
 <html>
 	<head>
 		{{ template "head" . }}
 		<link rel="stylesheet" type="text/css" href="{{.Host}}/css/{{.Theme}}.css" />
+		
+		<link rel="stylesheet" type="text/css" href="https://hardy-steffen.b-cdn.net/fonts/stylesheet.css" />
+		<link rel="preload" href="https://hardy-steffen.b-cdn.net/fonts/FivoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://hardy-steffen.b-cdn.net/fonts/FivoSans-Thin.woff" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://hardy-steffen.b-cdn.net/fonts/FivoSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+		
 		<link rel="shortcut icon" href="{{.Host}}/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
